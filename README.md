@@ -6,7 +6,7 @@ Open `index.html` in a browser, or serve the folder with any static host (GitHub
 
 ```
 index.html                       the page (self-contained HTML/CSS, inline SVG badges)
-assets/genlock-video.mp4         98 s intro video with captions and voiceover
+assets/genlock-video.mp4         115 s intro video with captions and voiceover
 assets/genlock-video-poster.jpg  video poster frame
 ```
 
