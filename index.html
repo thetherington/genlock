@@ -10,6 +10,9 @@
 <style>
 body{margin:0;background:#0E141B}
 a{color:#F2A33A}a:hover{color:#FFC06B}
+.flowband{display:block}
+@media (max-width: 760px){.flowband{display:none}}
+@media (prefers-reduced-motion: reduce){.flowdot,.flowpulse{display:none}}
 </style>
 <style>html{scroll-behavior:smooth} *{box-sizing:border-box}</style>
 </head>
@@ -33,7 +36,7 @@ a{color:#F2A33A}a:hover{color:#FFC06B}
 </nav>
 </header>
 
-<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 80px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<section id="top" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px 32px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
 <div style="flex: 1 1 480px; min-width: 0">
 <p style="margin: 0 0 20px; font-size: 14px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #F2A33A">Observability for broadcast IP facilities</p>
 <h1 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 700; letter-spacing: -0.02em">See every device on your broadcast network.</h1>
@@ -101,6 +104,78 @@ a{color:#F2A33A}a:hover{color:#FFC06B}
 </div>
 </section>
 
+<div class="flowband" aria-hidden="true" style="max-width: 1320px; margin: 0 auto; padding: 0 24px 72px">
+<svg viewBox="0 0 1440 300" width="100%" style="display: block; overflow: visible" font-family="Inter, sans-serif">
+<circle cx="46" cy="20" r="12" fill="#16202A" stroke="#3A4856"></circle><text x="46" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#F2A33A">1</text>
+<text x="66" y="25" font-size="14" font-weight="600" fill="#9AA7B4">Monitor your devices</text>
+<circle cx="366" cy="20" r="12" fill="#16202A" stroke="#3A4856"></circle><text x="366" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#F2A33A">2</text>
+<text x="386" y="25" font-size="14" font-weight="600" fill="#9AA7B4">Collect and send securely</text>
+<circle cx="696" cy="20" r="12" fill="#16202A" stroke="#3A4856"></circle><text x="696" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#F2A33A">3</text>
+<text x="716" y="25" font-size="14" font-weight="600" fill="#9AA7B4">Understand and enrich</text>
+<circle cx="1096" cy="20" r="12" fill="#16202A" stroke="#3A4856"></circle><text x="1096" y="25" text-anchor="middle" font-size="13" font-weight="700" fill="#F2A33A">4</text>
+<text x="1116" y="25" font-size="14" font-weight="600" fill="#9AA7B4">Feed your analytics</text>
+<path d="M 225 82 C 300 82, 300 150, 370 150" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 225 150 C 300 150, 300 150, 370 150" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 225 218 C 300 218, 300 150, 370 150" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 570 150 L 690 150" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<text x="630" y="136" text-anchor="middle" font-size="12" fill="#6B7A88">outbound TLS</text>
+<path d="M 910 150 C 1010 150, 1030 54, 1130 54" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 910 150 C 1010 150, 1030 102, 1130 102" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 910 150 C 1010 150, 1030 150, 1130 150" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 910 150 C 1010 150, 1030 198, 1130 198" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<path d="M 910 150 C 1010 150, 1030 246, 1130 246" fill="none" stroke="#2C3A48" stroke-width="2"></path>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="2.4s" begin="-0.01s" repeatCount="indefinite" path="M 225 82 C 300 82, 300 150, 370 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="2.4s" begin="-1.21s" repeatCount="indefinite" path="M 225 82 C 300 82, 300 150, 370 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="2.4s" begin="-0.41s" repeatCount="indefinite" path="M 225 150 C 300 150, 300 150, 370 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="2.4s" begin="-1.61s" repeatCount="indefinite" path="M 225 150 C 300 150, 300 150, 370 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="2.4s" begin="-0.81s" repeatCount="indefinite" path="M 225 218 C 300 218, 300 150, 370 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="2.4s" begin="-2.01s" repeatCount="indefinite" path="M 225 218 C 300 218, 300 150, 370 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="1.6s" begin="-0.01s" repeatCount="indefinite" path="M 570 150 L 690 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="1.6s" begin="-0.54s" repeatCount="indefinite" path="M 570 150 L 690 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#4C9BE8"><animateMotion dur="1.6s" begin="-1.07s" repeatCount="indefinite" path="M 570 150 L 690 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-0.01s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 54, 1130 54"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-1.11s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 54, 1130 54"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-0.31s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 102, 1130 102"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-1.41s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 102, 1130 102"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-0.61s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 150, 1130 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-1.71s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 150, 1130 150"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-0.91s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 198, 1130 198"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-2.01s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 198, 1130 198"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-1.21s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 246, 1130 246"></animateMotion></circle>
+<circle class="flowdot" r="5" fill="#F2A33A"><animateMotion dur="2.2s" begin="-2.31s" repeatCount="indefinite" path="M 910 150 C 1010 150, 1030 246, 1130 246"></animateMotion></circle>
+<rect x="75" y="60" width="150" height="44" rx="10" fill="#16202A" stroke="#3A4856" stroke-width="1.5"></rect>
+<circle cx="97" cy="82" r="5" fill="#4C9BE8"><animate attributeName="opacity" values="1;0.35;1" dur="2s" begin="0.0s" repeatCount="indefinite"></animate></circle>
+<text x="112" y="87" font-size="15" font-weight="600" fill="#E3E7EB">Camera</text>
+<rect x="75" y="128" width="150" height="44" rx="10" fill="#16202A" stroke="#3A4856" stroke-width="1.5"></rect>
+<circle cx="97" cy="150" r="5" fill="#4C9BE8"><animate attributeName="opacity" values="1;0.35;1" dur="2s" begin="0.5s" repeatCount="indefinite"></animate></circle>
+<text x="112" y="155" font-size="15" font-weight="600" fill="#E3E7EB">Gateway</text>
+<rect x="75" y="196" width="150" height="44" rx="10" fill="#16202A" stroke="#3A4856" stroke-width="1.5"></rect>
+<circle cx="97" cy="218" r="5" fill="#4C9BE8"><animate attributeName="opacity" values="1;0.35;1" dur="2s" begin="1.0s" repeatCount="indefinite"></animate></circle>
+<text x="112" y="223" font-size="15" font-weight="600" fill="#E3E7EB">Switch</text>
+<circle class="flowpulse" cx="470" cy="150" r="60" fill="none" stroke="#4C9BE8" stroke-width="2"><animate attributeName="r" values="50;80" dur="2.4s" repeatCount="indefinite"></animate><animate attributeName="opacity" values="0.5;0" dur="2.4s" repeatCount="indefinite"></animate></circle>
+<rect x="370" y="110" width="200" height="80" rx="14" fill="#16202A" stroke="#4C9BE8" stroke-width="2"></rect>
+<text x="470" y="145" text-anchor="middle" font-size="17" font-weight="700" fill="#F2EFE8">Edge collector</text>
+<text x="470" y="168" text-anchor="middle" font-size="13" fill="#9AA7B4">on your network</text>
+<circle class="flowpulse" cx="800" cy="150" r="70" fill="none" stroke="#F2A33A" stroke-width="2"><animate attributeName="r" values="60;95" dur="2.4s" begin="1.2s" repeatCount="indefinite"></animate><animate attributeName="opacity" values="0.5;0" dur="2.4s" begin="1.2s" repeatCount="indefinite"></animate></circle>
+<rect x="690" y="100" width="220" height="100" rx="18" fill="#1E1A14" stroke="#F2A33A" stroke-width="2"></rect>
+<circle cx="728" cy="150" r="15" fill="none" stroke="#F2A33A" stroke-width="3.5"></circle><circle cx="728" cy="150" r="6" fill="#F2A33A"></circle>
+<text x="752" y="146" font-size="17" font-weight="700" fill="#F2EFE8">Genlock cloud</text>
+<text x="752" y="169" font-size="13" fill="#C9D1D9">profiles + enrichment</text>
+<rect x="1130" y="36" width="150" height="36" rx="18" fill="#16202A" stroke="#4C9BE8" stroke-width="1.5"></rect>
+<text x="1205" y="59" text-anchor="middle" font-size="14" font-weight="600" fill="#E3E7EB">Splunk</text>
+<rect x="1130" y="84" width="150" height="36" rx="18" fill="#16202A" stroke="#4C9BE8" stroke-width="1.5"></rect>
+<text x="1205" y="107" text-anchor="middle" font-size="14" font-weight="600" fill="#E3E7EB">Datadog</text>
+<rect x="1130" y="132" width="150" height="36" rx="18" fill="#16202A" stroke="#4C9BE8" stroke-width="1.5"></rect>
+<text x="1205" y="155" text-anchor="middle" font-size="14" font-weight="600" fill="#E3E7EB">Elastic</text>
+<rect x="1130" y="180" width="150" height="36" rx="18" fill="#16202A" stroke="#4C9BE8" stroke-width="1.5"></rect>
+<text x="1205" y="203" text-anchor="middle" font-size="14" font-weight="600" fill="#E3E7EB">Grafana</text>
+<rect x="1130" y="228" width="150" height="36" rx="18" fill="#16202A" stroke="#4C9BE8" stroke-width="1.5"></rect>
+<text x="1205" y="251" text-anchor="middle" font-size="14" font-weight="600" fill="#E3E7EB">ServiceNow</text>
+<circle cx="560" cy="290" r="5" fill="#4C9BE8"></circle><text x="572" y="295" font-size="13" fill="#9AA7B4">raw device telemetry</text>
+<circle cx="760" cy="290" r="5" fill="#F2A33A"></circle><text x="772" y="295" font-size="13" fill="#9AA7B4">enriched metrics, logs and traces</text>
+</svg>
+</div>
+
 <section id="watch" style="max-width: 1200px; margin: 0 auto; padding: 0 24px 96px">
 <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px; margin-bottom: 24px">
 <div>
@@ -109,7 +184,7 @@ a{color:#F2A33A}a:hover{color:#FFC06B}
 </div>
 <p style="margin: 0; font-size: 16px; color: #9AA7B4">98 seconds · Inspired by the Antikythera mechanism · Device vendors: get certified with us in Toronto, May 12–13, 2027 (sample event).</p>
 </div>
-<video controls playsinline preload="metadata" poster="assets/genlock-video.mp4" title="Genlock intro video" aria-label="Genlock intro and Partner Summit video, 98 seconds, with captions" style="display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; border: 1px solid #22303D; background: #000000">
+<video controls playsinline preload="metadata" poster="assets/genlock-video-poster.jpg" title="Genlock intro video" aria-label="Genlock intro and Partner Summit video, 98 seconds, with captions" style="display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 16px; border: 1px solid #22303D; background: #000000">
 <source src="assets/genlock-video.mp4" type="video/mp4">
 </video>
 </section>
@@ -256,11 +331,11 @@ a{color:#F2A33A}a:hover{color:#FFC06B}
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
 <div style="background: #FFFFFF; border-radius: 14px; padding: 28px">
 <div style="width: 160px; height: 160px; margin: 0 0 18px"><svg width="160" height="160" viewBox="0 0 320 320" role="img" aria-label="Genlock Certified, Level 1, discoverable, silver badge" style="display:block;font-family:Inter,sans-serif">
-<defs><path id="arc-1-7253" d="M 38,160 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0"/></defs>
+<defs><path id="arc-1-160" d="M 38,160 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0"/></defs>
 <circle cx="160" cy="160" r="152" fill="#141B23" stroke="#C9D1D9" stroke-width="5"/>
 <circle cx="160" cy="160" r="141" fill="none" stroke="#C9D1D9" stroke-width="1" stroke-opacity="0.55"/>
 <circle cx="160" cy="160" r="106" fill="none" stroke="#C9D1D9" stroke-width="1" stroke-opacity="0.55"/>
-<text font-size="12.5" font-weight="700" letter-spacing="2.4" fill="#C9D1D9"><textPath href="#arc-1-7253" textLength="752" lengthAdjust="spacing">GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •  GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •</textPath></text>
+<text font-size="12.5" font-weight="700" letter-spacing="2.4" fill="#C9D1D9"><textPath href="#arc-1-160" textLength="752" lengthAdjust="spacing">GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •  GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •</textPath></text>
 <path d="M252.0 160.0L262.0 160.0 M256.6 168.5L261.6 168.9 M255.5 176.8L260.5 177.7 M253.7 185.1L258.5 186.4 M251.2 193.2L255.8 194.9 M247.9 201.0L252.4 203.1 M176.8 255.5L177.7 260.5 M168.5 256.6L168.9 261.6 M151.5 256.6L151.1 261.6 M143.2 255.5L142.3 260.5 M72.1 201.0L67.6 203.1 M68.8 193.2L64.2 194.9 M66.3 185.1L61.5 186.4 M64.5 176.8L59.5 177.7 M63.4 168.5L58.4 168.9 M68.0 160.0L58.0 160.0 M63.4 151.5L58.4 151.1 M64.5 143.2L59.5 142.3 M66.3 134.9L61.5 133.6 M68.8 126.8L64.2 125.1 M72.1 119.0L67.6 116.9 M80.3 114.0L71.7 109.0 M80.5 104.4L76.4 101.5 M85.7 97.6L81.9 94.4 M91.4 91.4L87.9 87.9 M97.6 85.7L94.4 81.9 M104.4 80.5L101.5 76.4 M114.0 80.3L109.0 71.7 M119.0 72.1L116.9 67.6 M126.8 68.8L125.1 64.2 M134.9 66.3L133.6 61.5 M143.2 64.5L142.3 59.5 M151.5 63.4L151.1 58.4 M160.0 68.0L160.0 58.0 M168.5 63.4L168.9 58.4 M176.8 64.5L177.7 59.5 M185.1 66.3L186.4 61.5 M193.2 68.8L194.9 64.2 M201.0 72.1L203.1 67.6 M206.0 80.3L211.0 71.7 M215.6 80.5L218.5 76.4 M222.4 85.7L225.6 81.9 M228.6 91.4L232.1 87.9 M234.3 97.6L238.1 94.4 M239.5 104.4L243.6 101.5 M239.7 114.0L248.3 109.0 M247.9 119.0L252.4 116.9 M251.2 126.8L255.8 125.1 M253.7 134.9L258.5 133.6 M255.5 143.2L260.5 142.3 M256.6 151.5L261.6 151.1" stroke="#C9D1D9" stroke-width="1.6" stroke-linecap="round" fill="none"/>
 <text x="160" y="84" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#C9D1D9" fill-opacity="0.85">2027</text>
 <circle cx="160" cy="138" r="34" fill="none" stroke="#C9D1D9" stroke-width="6"/>
@@ -275,11 +350,11 @@ a{color:#F2A33A}a:hover{color:#FFC06B}
 </div>
 <div style="background: #FFFFFF; border-radius: 14px; padding: 28px">
 <div style="width: 160px; height: 160px; margin: 0 0 18px"><svg width="160" height="160" viewBox="0 0 320 320" role="img" aria-label="Genlock Certified, Level 2, observable, gold badge" style="display:block;font-family:Inter,sans-serif">
-<defs><path id="arc-2-6171" d="M 38,160 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0"/></defs>
+<defs><path id="arc-2-160" d="M 38,160 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0"/></defs>
 <circle cx="160" cy="160" r="152" fill="#17140E" stroke="#E9B44C" stroke-width="5"/>
 <circle cx="160" cy="160" r="141" fill="none" stroke="#E9B44C" stroke-width="1" stroke-opacity="0.55"/>
 <circle cx="160" cy="160" r="106" fill="none" stroke="#E9B44C" stroke-width="1" stroke-opacity="0.55"/>
-<text font-size="12.5" font-weight="700" letter-spacing="2.4" fill="#E9B44C"><textPath href="#arc-2-6171" textLength="752" lengthAdjust="spacing">GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •  GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •</textPath></text>
+<text font-size="12.5" font-weight="700" letter-spacing="2.4" fill="#E9B44C"><textPath href="#arc-2-160" textLength="752" lengthAdjust="spacing">GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •  GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •</textPath></text>
 <path d="M252.0 160.0L262.0 160.0 M256.6 168.5L261.6 168.9 M255.5 176.8L260.5 177.7 M253.7 185.1L258.5 186.4 M251.2 193.2L255.8 194.9 M247.9 201.0L252.4 203.1 M176.8 255.5L177.7 260.5 M168.5 256.6L168.9 261.6 M151.5 256.6L151.1 261.6 M143.2 255.5L142.3 260.5 M72.1 201.0L67.6 203.1 M68.8 193.2L64.2 194.9 M66.3 185.1L61.5 186.4 M64.5 176.8L59.5 177.7 M63.4 168.5L58.4 168.9 M68.0 160.0L58.0 160.0 M63.4 151.5L58.4 151.1 M64.5 143.2L59.5 142.3 M66.3 134.9L61.5 133.6 M68.8 126.8L64.2 125.1 M72.1 119.0L67.6 116.9 M80.3 114.0L71.7 109.0 M80.5 104.4L76.4 101.5 M85.7 97.6L81.9 94.4 M91.4 91.4L87.9 87.9 M97.6 85.7L94.4 81.9 M104.4 80.5L101.5 76.4 M114.0 80.3L109.0 71.7 M119.0 72.1L116.9 67.6 M126.8 68.8L125.1 64.2 M134.9 66.3L133.6 61.5 M143.2 64.5L142.3 59.5 M151.5 63.4L151.1 58.4 M160.0 68.0L160.0 58.0 M168.5 63.4L168.9 58.4 M176.8 64.5L177.7 59.5 M185.1 66.3L186.4 61.5 M193.2 68.8L194.9 64.2 M201.0 72.1L203.1 67.6 M206.0 80.3L211.0 71.7 M215.6 80.5L218.5 76.4 M222.4 85.7L225.6 81.9 M228.6 91.4L232.1 87.9 M234.3 97.6L238.1 94.4 M239.5 104.4L243.6 101.5 M239.7 114.0L248.3 109.0 M247.9 119.0L252.4 116.9 M251.2 126.8L255.8 125.1 M253.7 134.9L258.5 133.6 M255.5 143.2L260.5 142.3 M256.6 151.5L261.6 151.1" stroke="#E9B44C" stroke-width="1.6" stroke-linecap="round" fill="none"/>
 <text x="160" y="84" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#E9B44C" fill-opacity="0.85">2027</text>
 <circle cx="160" cy="138" r="34" fill="none" stroke="#E9B44C" stroke-width="6"/>
@@ -294,11 +369,11 @@ a{color:#F2A33A}a:hover{color:#FFC06B}
 </div>
 <div style="background: #FFFFFF; border-radius: 14px; padding: 28px">
 <div style="width: 160px; height: 160px; margin: 0 0 18px"><svg width="160" height="160" viewBox="0 0 320 320" role="img" aria-label="Genlock Certified, Level 3, instrumented + secure, platinum badge" style="display:block;font-family:Inter,sans-serif">
-<defs><path id="arc-3-9871" d="M 38,160 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0"/></defs>
+<defs><path id="arc-3-160" d="M 38,160 a 122,122 0 1,1 244,0 a 122,122 0 1,1 -244,0"/></defs>
 <circle cx="160" cy="160" r="152" fill="#0B1016" stroke="#ECEFF3" stroke-width="5"/>
 <circle cx="160" cy="160" r="141" fill="none" stroke="#ECEFF3" stroke-width="1" stroke-opacity="0.55"/>
 <circle cx="160" cy="160" r="106" fill="none" stroke="#ECEFF3" stroke-width="1" stroke-opacity="0.55"/>
-<text font-size="12.5" font-weight="700" letter-spacing="2.4" fill="#ECEFF3"><textPath href="#arc-3-9871" textLength="752" lengthAdjust="spacing">GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •  GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •</textPath></text>
+<text font-size="12.5" font-weight="700" letter-spacing="2.4" fill="#ECEFF3"><textPath href="#arc-3-160" textLength="752" lengthAdjust="spacing">GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •  GENLOCK CERTIFIED  •  OBSERVABLE BY DESIGN  •</textPath></text>
 <path d="M252.0 160.0L262.0 160.0 M256.6 168.5L261.6 168.9 M255.5 176.8L260.5 177.7 M253.7 185.1L258.5 186.4 M251.2 193.2L255.8 194.9 M247.9 201.0L252.4 203.1 M176.8 255.5L177.7 260.5 M168.5 256.6L168.9 261.6 M151.5 256.6L151.1 261.6 M143.2 255.5L142.3 260.5 M72.1 201.0L67.6 203.1 M68.8 193.2L64.2 194.9 M66.3 185.1L61.5 186.4 M64.5 176.8L59.5 177.7 M63.4 168.5L58.4 168.9 M68.0 160.0L58.0 160.0 M63.4 151.5L58.4 151.1 M64.5 143.2L59.5 142.3 M66.3 134.9L61.5 133.6 M68.8 126.8L64.2 125.1 M72.1 119.0L67.6 116.9 M80.3 114.0L71.7 109.0 M80.5 104.4L76.4 101.5 M85.7 97.6L81.9 94.4 M91.4 91.4L87.9 87.9 M97.6 85.7L94.4 81.9 M104.4 80.5L101.5 76.4 M114.0 80.3L109.0 71.7 M119.0 72.1L116.9 67.6 M126.8 68.8L125.1 64.2 M134.9 66.3L133.6 61.5 M143.2 64.5L142.3 59.5 M151.5 63.4L151.1 58.4 M160.0 68.0L160.0 58.0 M168.5 63.4L168.9 58.4 M176.8 64.5L177.7 59.5 M185.1 66.3L186.4 61.5 M193.2 68.8L194.9 64.2 M201.0 72.1L203.1 67.6 M206.0 80.3L211.0 71.7 M215.6 80.5L218.5 76.4 M222.4 85.7L225.6 81.9 M228.6 91.4L232.1 87.9 M234.3 97.6L238.1 94.4 M239.5 104.4L243.6 101.5 M239.7 114.0L248.3 109.0 M247.9 119.0L252.4 116.9 M251.2 126.8L255.8 125.1 M253.7 134.9L258.5 133.6 M255.5 143.2L260.5 142.3 M256.6 151.5L261.6 151.1" stroke="#ECEFF3" stroke-width="1.6" stroke-linecap="round" fill="none"/>
 <text x="160" y="84" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="3" fill="#ECEFF3" fill-opacity="0.85">2027</text>
 <circle cx="160" cy="138" r="34" fill="none" stroke="#ECEFF3" stroke-width="6"/>
